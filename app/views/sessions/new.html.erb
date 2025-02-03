@@ -1,0 +1,20 @@
+<%= tag.div(flash[:alert], class: "flash-message alert") if flash[:alert] %>
+<%= tag.div(flash[:notice], class: "flash-message notice") if flash[:notice] %>
+
+<div class="login-form-container">
+  <%= form_with url: session_path do |form| %>
+    <div class="form-group">
+      <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "Enter your email address", value: params[:email_address], class: "form-input" %>
+    </div><br>
+
+    <div class="form-group">
+      <%= form.password_field :password, required: true, autocomplete: "current-password", placeholder: "Enter your password", maxlength: 72, class: "form-input" %>
+    </div><br>
+
+    <div class="form-group">
+      <%= form.submit "Sign in", class: "form-submit" %>
+    </div><br>
+  <% end %>
+
+  <%= link_to "Forgot password?", new_password_path, class: "forgot-password" %>
+</div>

@@ -1,0 +1,262 @@
+  /* Basic Navbar Styles */
+  nav {
+    background-color: #42a5f5; /* Light blue background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Navbar Links */
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #1e88e5; /* Darker blue on hover */
+    border-radius: 5px;
+  }
+
+  /* Auth Links Container (for alignment) */
+  .auth-links {
+    margin-left: auto; /* Aligns to the right */
+  }
+
+  /* Button Styles */
+  button {
+    background-color: #64b5f6; /* Lighter blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #2196f3; /* Standard blue on hover */
+  }
+
+
+  /* index page */
+  /* Center the title with a light blue theme */
+  h1 {
+    text-align: center; /* Centers the title */
+    color: #0288d1; /* Light blue color for the title */
+    font-family: 'Arial', sans-serif; /* Font styling */
+  }
+
+  /* Center the products container */
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the items horizontally */
+    gap: 20px; /* Adds space between the items */
+    padding: 20px;
+  }
+
+  /* Style for individual product items */
+  .product-item {
+    text-align: center; /* Centers the text in each item */
+    padding: 15px;
+    background-color: #e1f5fe; /* Light blue background for products */
+    border-radius: 8px;
+    width: 200px; /* Set a fixed width for product items */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .product-item:hover {
+    background-color: #81d4fa; /* Slightly darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+
+  .product-item a {
+    color: #0288d1; /* Light blue color for the product link */
+    text-decoration: none; /* Removes underline */
+    font-size: 18px; /* Font size for the product name */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .product-item a:hover {
+    color: #01579b; /* Darker blue on hover */
+  }
+
+
+
+  /* show page  */
+  /* Basic styling for the product section */
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+  }
+
+  .product-frame {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    border: 1px solid #b3e0ff; /* Light blue border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Soft blue shadow */
+    background-color: white; /* Light blue background */
+    overflow: hidden;
+  }
+
+  .product-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .product-info {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white; /* Light blue background for details */
+  }
+
+
+  .product-info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .product-info .action-buttons {
+    display: flex; /* Display buttons in a row */
+    gap: 10px; /* Add space between buttons */
+    margin-top: 20px;
+  }
+
+  .product-info .edit-link,
+  .product-info .delete-btn {
+    padding: 10px 15px;
+    background-color: #66b3ff; /* Light blue button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    width: auto; /* Make sure the buttons don't stretch */
+  }
+
+  .product-info .edit-link:hover,
+  .product-info .delete-btn:hover {
+    background-color: #3399ff; /* Darker blue on hover */
+  }
+
+  /* Styling for the "Back" link */
+  p a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #66b3ff; /* Light blue button */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  p a:hover {
+    background-color: #3399ff; /* Darker blue on hover */
+  }
+
+
+  /* Form */
+
+  /* Flash messages */
+.flash-message {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.flash-message.alert {
+  background-color: #f8d7da;
+  color: red;
+  border: 1px solid #f5c6cb;
+}
+
+.flash-message.notice {
+  background-color: #d4edda;
+  color: green;
+  border: 1px solid #c3e6cb;
+}
+
+/* Form container */
+.login-form-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+.form-container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Labels */
+.form-label {
+  font-weight: bold;
+  color: #0288d1;
+  margin-bottom: 5px;
+}
+
+/* Form inputs */
+.form-input {
+  width: 98%;
+  padding: 10px;
+  border: 1px solid #81d4fa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Submit button */
+.form-submit {
+  background-color: #42a5f5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.form-submit:hover {
+  background-color: #1e88e5;
+}
+
+/* Forgot password link */
+.forgot-password {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #0288d1;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
