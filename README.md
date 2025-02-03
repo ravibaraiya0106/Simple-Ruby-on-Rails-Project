@@ -1,24 +1,23 @@
-# README
+# Run Project
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Download Ruby : https://rubyinstaller.org/downloads/
+    
+* Open cmd Run as administrator
+* check installation
+  * ruby -v
+  * gem install rails
+  * rails -v
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Run Given Command
+  *  gem install bundler
+  *  cd /path/to/your/project
+  *  bundle install
+  *  rails db:create   # Creates the database
+  *  rails db:migrate  # Runs migrations
+  *  rails db:seed     # (Optional) Seeds initial data
+  *  rails server or rails s
